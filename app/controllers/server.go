@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
+	"os"
 	"yourfate_webapp/config"
 )
 
@@ -22,5 +23,7 @@ func StartMainServer() error {
 	http.Handle("/static/", http.StripPrefix("/static/", files))
 	http.HandleFunc("/", top)
 	http.HandleFunc("/fate", fate)
-	return http.ListenAndServe(":"+config.Config.Port, nil)
+
+	port := os.Getenv("PORT")
+	return http.ListenAndServe(":"+port, nil)
 }
