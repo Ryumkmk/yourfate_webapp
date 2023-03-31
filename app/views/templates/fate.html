@@ -1,0 +1,54 @@
+{{ define "content" }}
+<h1 class="fatetitle">今日の運勢</h1>
+
+{{ range . }}
+<div class="horoscope">
+    <div class="item">
+        <div class="subtitle">
+
+            <h2 class="divisionname">
+  
+                {{ .Sign }}
+
+            </h2>
+            {{ if eq .Sign "牡羊座" }}
+            <img src="/static/imgs/Aries.png" width="200px">
+            {{ else if eq .Sign "牡牛座" }}
+            <img src="/static/imgs/Taurus.png" width="200px">
+            {{ else if eq .Sign "双子座" }}
+            <img src="/static/imgs/Gemini.png" width="200px">
+            {{ else if eq .Sign "蟹座" }}
+            <img src="/static/imgs/Cancer.png" width="200px">
+            {{ else if eq .Sign "獅子座" }}
+            <img src="/static/imgs/Leo.png" width="200px">
+            {{ else if eq .Sign "乙女座" }}
+            <img src="/static/imgs/Virgo.png" width="200px">
+            {{ else if eq .Sign "天秤座" }}
+            <img src="/static/imgs/Libra.png" width="200px">
+            {{ else if eq .Sign "蠍座" }}
+            <img src="/static/imgs/Scorpio.png" width="200px">
+            {{ else if eq .Sign "射手座" }}
+            <img src="/static/imgs/Sagittarius.png" width="200px">
+            {{ else if eq .Sign "山羊座" }}
+            <img src="/static/imgs/Carpricorn.png" width="200px">
+            {{ else if eq .Sign "水瓶座" }}
+            <img src="/static/imgs/Aquarius.png" width="200px">
+            {{ else if eq .Sign "魚座" }}
+            <img src="/static/imgs/Pisces.png" width="200px">
+            {{ end }}
+        </div>
+        <p>{{ .Content }}</p>
+        <div class="fatetext">
+            <ul>
+                <li>総合運: {{ .Total }}</li>
+                <li>仕事運: {{ .Job }}</li>
+                <li>恋愛運: {{ .Love }}</li>
+                <li>金運: {{ .Money }}</li>
+                <li>ラッキーカラー: {{ .Color }}</li>
+                <li>ラッキーアイテム: {{ .Item }}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{{ end }}
+{{ end }}

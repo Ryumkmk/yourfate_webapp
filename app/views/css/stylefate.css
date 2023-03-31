@@ -1,0 +1,91 @@
+body * {
+  font-family: "Chakra Petch", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Noto Serif JP", serif;
+}
+
+.body {
+  width: 84%;
+}
+
+.toptitle {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.catchecopy {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.navbar {
+  text-align: center;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 2px;
+  border: 1px solid black;
+  color: black;
+  box-shadow: 2px 2px 2px rgb(87, 87, 87);
+}
+
+.fatetitle {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.horoscope {
+  margin-bottom: 20px;
+}
+
+.item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 60px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 85%;
+}
+.item .subtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(6, 0, 59, 0.2117647059);
+  padding: 5px 0;
+}
+.item .subtitle .divisionname {
+  margin: auto;
+  font-size: 33px;
+}
+.item .fatetext {
+  border-top: 1px solid rgba(6, 0, 59, 0.2117647059);
+  padding: 5px 0;
+}
+.item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.item p {
+  font-size: 19px;
+  font-weight: 600;
+  width: 85%;
+  line-height: 1.5;
+  margin: 20px auto;
+  text-align: center;
+}
+.item ul {
+  list-style: none;
+  padding: 0;
+  font-weight: 600;
+  width: 90%;
+  margin: 1px auto;
+}
+.item li {
+  font-size: 17px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(50, 31, 214, 0.2117647059);
+}/*# sourceMappingURL=stylefate.css.map */
